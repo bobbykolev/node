@@ -2,8 +2,7 @@ doctype
 html
 	head
 		title Test
-		link(rel="stylesheet" href="/css/bootstrap.min.css")
-		link(rel="stylesheet" href="/css/style.css")
+		
 		include ../includes/scripts
 	body
 		header.clearfix
@@ -11,8 +10,9 @@ html
 				div.row
 					div.col-md-10.col-md-offset-1
 						nav.blog-nav
-							a.blog-nav-item.active(href="#") HOME
+							a.blog-nav-item.active(href="/home")
 								i.fa.fa-home
+							a.blog-nav-item(href="/contact") Contact
 						
 							form.form-group
 								ul 
@@ -21,8 +21,8 @@ html
 									li
 										button.btn.btn-sm.btn-primary(data-bind="click: login") Login
 									li
-										input.form-control(type="password" data-bind="value: password")
+										input.form-control(type="password" data-bind="value: password" placeholder="password")
 									li
-										input.form-control(type="text" data-bind="value: username")
+										input.form-control(type="text" data-bind="value: username" placeholder="username")
 
 		block main

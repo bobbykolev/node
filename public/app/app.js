@@ -10,5 +10,4 @@ var ViewModel = function(name) {
 		console.log(this.username(), this.password());
 	}
 },
-
 vm = new ViewModel('Test Node');
