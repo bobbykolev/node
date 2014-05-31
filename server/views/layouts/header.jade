@@ -1,4 +1,4 @@
-doctype html
+doctype
 html
 	head
 		title Test
@@ -7,12 +7,22 @@ html
 		include ../includes/scripts
 	body
 		header.clearfix
-			nav
-				ul
-					li 
-						a link1
-					li 
-						a link2
-					li 
-						a link3
+			div.clearfix.blog-masthead
+				div.row
+					div.col-md-10.col-md-offset-1
+						nav.blog-nav
+							a.blog-nav-item.active(href="#") HOME
+								i.fa.fa-home
+						
+							form.form-group
+								ul 
+									li
+										a.btn.btn-sm.btn-primary(href="#") Sign Up
+									li
+										button.btn.btn-sm.btn-primary(data-bind="click: login") Login
+									li
+										input.form-control(type="password" data-bind="value: password")
+									li
+										input.form-control(type="text" data-bind="value: username")
+
 		block main

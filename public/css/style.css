@@ -17,9 +17,38 @@ body {
   background: #555;
   color: #5bc0de;
 }
-nav {
-  font-weight: bold;
+#wrapper {
+  margin-top: 60px;
 }
-nav ul li {
-  margin: 3px 15px;
+.blog-masthead {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: #5bc0de;
+  box-shadow: 0px -2px 5px rgba(0,0,0,0.1) inset;
+}
+.blog-masthead .blog-nav .form-group {
+  float: right;
+  width: 50%;
+  margin-bottom: 0;
+}
+.blog-masthead .blog-nav .form-group .form-control {
+  width: 100px !important;
+  height: 30px;
+  border-radius: 1px;
+}
+.blog-masthead .blog-nav .form-group ul li {
+  float: right;
+  margin-right: 3px;
+  margin-top: 3px;
+}
+.blog-masthead .blog-nav .blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+}
+.btn-sm {
+  border-radius: 1px;
 }
